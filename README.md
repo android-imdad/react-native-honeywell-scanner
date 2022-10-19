@@ -1,14 +1,14 @@
-# react-native-honeywell-scanner-v2
+# rn-honeywell-scanner
 
-This module is fork of react-native-honeywell-scanner.
+This module is fork of react-native-honeywell-scanner-v2 with a fallback fix for IOS and just experimenting with my first react native package upload
 
 ## Getting started
 
-`$ npm install react-native-honeywell-scanner-v2 --save`
+`$ npm install rn-honeywell-scanner --save`
 
 ## Usage
 ```javascript
-import HoneywellScanner from 'react-native-honeywell-scanner-v2';
+import HoneywellScanner from 'rn-honeywell-scanner';
 
 ...
 

@@ -1,6 +1,6 @@
 import { NativeModules, NativeEventEmitter } from 'react-native';
 
-const { HoneywellScanner } = NativeModules;
+const HoneywellScanner = NativeModules.HoneywellScanner || {};
 
 /**
  * Listen for available events
