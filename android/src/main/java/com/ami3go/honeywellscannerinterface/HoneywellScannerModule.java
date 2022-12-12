@@ -99,13 +99,18 @@ public class HoneywellScannerModule extends ReactContextBaseJavaModule implement
 
     @ReactMethod
     public void stopReader(Promise promise) {
-        if (reader != null) {
-            reader.close();
-        }
-        if (manager != null) {
-            manager.close();
+        try {
+            if (reader != null) {
+                reader.close();
+            }
+            if (manager != null) {
+                manager.close();
+            }
+        } catch (Exception e){
+            e.printStackTrace();
         }
         promise.resolve(null);
+
     }
 
     private boolean isCompatible() {
